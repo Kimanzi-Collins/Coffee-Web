@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee Website | Collins Kimanzi</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
     <header>
@@ -13,25 +15,27 @@
                 <h2 class="logo-text">☕ Kimanzi's Coffee</h2>
             </a>
             <ul class="nav-menu">
+                <button id="menu-close-button" class="fas fa-close"></button>
                 <li class="nav-item">
                     <a href="#" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">About</a>
+                    <a href="#about" class="nav-link">About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Menu</a>
+                    <a href="#menu" class="nav-link">Menu</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Testimonials</a>
+                    <a href="#testimonials" class="nav-link">Testimonials</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Gallery</a>
+                    <a href="#gallery" class="nav-link">Gallery</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Contact</a>
+                    <a href="#contact" class="nav-link">Contact</a>
                 </li>
             </ul>
+            <button id="menu-open-button" class="fas fa-bars"></button>
         </nav>
     </header>
     <main>
@@ -51,6 +55,196 @@
                 </div>
             </div>
         </section>
+
+        <section class="about-section" id="about">
+         <div class="section-content">
+            <div class="about-image-wrapper">
+                <img src="images/about-image.jpg" alt="About" class="about-image">
+            </div>
+            <div class="about-details">
+                <h2 class="section-title">About Us</h2>
+                <p class="text">At Kimanzi's Coffee in Nairobi, Kenya, we pride ourselves on being a go-to destination for coffee lovers and conversation seekers alike. We're dedicated in providing an exceptional coffee experience in a cozy and inviting atmosphere, where guests can relax, unwind, and enjoy their time in comfort.</p>
+            <div class="social-link-list">
+                <a href="https://www.facebook.com/" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                <a href="http://x.com/" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+            </div>
+        </div>
+        </section>
+
+        <section class="menu-section" id="menu">
+            <h2 class="section-title">Our Menu</h2>
+            <div class="section-content">
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <img src="Images/hot-beverages.png" alt="Hot Beverages" class="menu-image">
+                        <div class="menu-details">
+                            <h3 class="name">Hot Beverages</h3>
+                            <p class="text">Wide range of Steaming hot coffee to make you fresh and light.</p>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <img src="Images/cold-beverages.png" alt="Cold Beverages" class="menu-image">
+                        <div class="menu-details">
+                            <h3 class="name">Cold Beverages</h3>
+                            <p class="text">Creamy and frothy cold coffee to make you cool.</p>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <img src="Images/refreshment.png" alt="Refreshment" class="menu-image">
+                        <div class="menu-details">
+                            <h3 class="name">Refreshment</h3>
+                            <p class="text">Fruity and Icy drink to make you feel refreshed.</p>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <img src="Images/special-combo.png" alt="Special Combos" class="menu-image">
+                        <div class="menu-details">
+                            <h3 class="name">Special Combos</h3>
+                            <p class="text">Your favorite eating and drinking combinations.</p>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <img src="Images/desserts.png" alt="Dessert" class="menu-image">
+                        <div class="menu-details">
+                            <h3 class="name">Dessert</h3>
+                            <p class="text">Satiate your palate and take yourself on a culinary treat.</p>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <img src="Images/burger-frenchfries.png" alt="Burger & French Fries" class="menu-image">
+                        <div class="menu-details">
+                            <h3 class="name">Burger & French Fries</h3>
+                            <p class="text">Quick bites to satisfy your minute hunger😂</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="testimonials-section" id="testimonials">
+            <h2 class="section-title">Testimonials</h2>
+            <div class="section-content">
+                <div class="slider-container">
+                    <div class="slider-wrapper swiper">
+                        <ul class="testimonials-list swiper-wrapper">
+                            <li class="testimonial swiper-slide">
+                                <img src="Images/user-1.jpg" alt="User" class="user-image">
+                                <h3 class="name">Sarah Johnson</h3>
+                                <i class="feedback">"Loved the French roast. Perfectly balanced and rich. Will order again!"</i>
+                            </li>
+                            <li class="testimonial swiper-slide">
+                                <img src="Images/user-2.jpg" alt="User" class="user-image">
+                                <h3 class="name">Geofrey Gikonyo</h3>
+                                <i class="feedback">"Great espresso blend! Smooth and bold. Perfect for crime fighting🦇"</i>
+                            </li>
+                            <li class="testimonial swiper-slide">
+                                <img src="Images/user-3.jpg" alt="User" class="user-image">
+                                <h3 class="name">Victor Mwendwa</h3>
+                                <i class="feedback">"Fantastic Mocha Flavor. Perfect for a day in the city writing for a newspaper."</i>
+                            </li>
+                            <li class="testimonial swiper-slide">
+                                <img src="Images/user-4.jpg" alt="User" class="user-image">
+                                <h3 class="name">Fridah Claire</h3>
+                                <i class="feedback">"Excellent quality! Fresh beans and amazing delivery."</i>
+                            </li>
+                            <li class="testimonial swiper-slide">
+                                <img src="Images/user-5.jpg" alt="User" class="user-image">
+                                <h3 class="name">Ian Irungu</h3>
+                                <i class="feedback">"Best decaf in town. And excellent customer service too!"</i>
+                            </li>
+                        </ul>
+
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-slide-button swiper-button-prev"></div>
+                        <div class="swiper-slide-button swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-section" id="gallery">
+            <h2 class="section-title">Gallery</h2>
+            <div class="section-content">
+                <ul class="gallery-list">
+                    <li class="gallery-item">
+                        <img src="Images/gallery-1.jpg" alt="Gallery" class="gallery-image">
+                    </li>
+                    <li class="gallery-item">
+                        <img src="Images/gallery-2.jpg" alt="Gallery" class="gallery-image">
+                    </li>
+                    <li class="gallery-item">
+                        <img src="Images/gallery-3.jpg" alt="Gallery" class="gallery-image">
+                    </li>
+                    <li class="gallery-item">
+                        <img src="Images/gallery-4.jpg" alt="Gallery" class="gallery-image">
+                    </li>
+                    <li class="gallery-item">
+                        <img src="Images/gallery-5.jpg" alt="Gallery" class="gallery-image">
+                    </li>
+                    <li class="gallery-item">
+                        <img src="Images/gallery-6.jpg" alt="Gallery" class="gallery-image">
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="section-content">
+                <ul class="contact-info-list">
+                    <li class="contact-info">
+                        <i class="fa-solid fa-location-crosshairs"></i>
+                        <p>Johari Avenue, Nyayo Estate, Nairobi.</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-regular fa-envelope"></i>
+                        <p>info@kimanzicoffee.com</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>+254 799-999-999</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-regular fa-clock"></i>
+                        <p>Everyday: 24Hrs</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-solid fa-globe"></i>
+                        <p>www.collins.com</p>
+                    </li>
+                </ul>
+
+                <form action="#" class="contact-form">
+                    <input type="text" placeholder="Your Name" class="form-input" required>
+                    <input type="email" placeholder="Your Email" class="form-input" required>
+                    <textarea placeholder="Your Message" class="form-input" required></textarea>
+                    <button type="submit" class="button submit-button">Submit</button>
+                </form>
+
+            </div>
+        </section>
+
+        <footer class="footer-section">
+            <div class="section-content">
+                <p class="copyright-text">© 2025 Collins Kimanzi Mwandikwa</p>
+                <div class="social-link-list">
+                    <a href="https://www.facebook.com/" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="http://x.com/" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+                <p class="policy-text">
+                    <a href="https://en.wikipedia.org/wiki/Privacy_policy#:~:text=A%20privacy%20policy%20is%20a,a%20customer%20or%20client's%20data." class="policy-link">Privacy Policy</a>
+                    <span class="separator">•</span>
+                    <a href="https://www.termsfeed.com/blog/sample-return-policy-ecommerce-stores/" class="policy-link">Refund Policy</a>
+                </p>
+            </div>
+        </footer>
+
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
 </body> 
 </html>  
